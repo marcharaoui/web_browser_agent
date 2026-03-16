@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "web-browser-agent"
+version = "0.1.0"
+description = "A minimal closed-loop web navigation agent with Playwright, OpenRouter-compatible planners, CLI chat, and a Streamlit GUI."
+authors = [{ name = "Marc Haraoui" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+keywords = ["agent", "browser", "playwright", "streamlit", "automation", "llm"]
+dependencies = [
+    "openai>=1.76.0",
+    "playwright>=1.46.0",
+    "pydantic>=2.8.2",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.44.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/web_nav_agent"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
