@@ -20,7 +20,7 @@ It ships with:
 - per-run artifacts for debugging and demos
 
 Author: Marc Haraoui   
-Medium blog: TBD   
+Medium blog: [Building a vision-based web navigation agent](https://medium.com/@marcharaoui/building-a-vision-based-web-navigation-agent-d2aa892401df)   
 Date: 14 March 2026
 
 ## Why This Repo
